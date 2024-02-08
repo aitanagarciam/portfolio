@@ -2,49 +2,56 @@
 font-family: 'Nunito Sans', sans-serif;
 
 Colors:
-Beige: #fdf0d5
+Beige: #f0ede6
 Navy: #003049
 Light blue: #669bbc
 Dark red: #780000
 */
 
+:root {
+  --color-navy: #003049;
+  --color-beige: #f0ede6;
+  --header-font: "EB Garamond", serif;
+  --paragraph-font: "Nunito Sans", sans-serif;
+}
+
 .body {
-  color: #003049;
+  color: var(--color-navy);
 }
 
 .navbar {
-  background-color: #f0ede6 !important;
-  color: #003049 !important;
+  background-color: var(--color-beige) !important;
+  color: var(--color-navy) !important;
 }
 
 .navbar-brand {
-  font-family: "EB Garamond", serif;
+  font-family: var(--header-font);
   font-weight: bold;
 }
 
 .nav-item {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--paragraph-font);
 }
 
 .hero {
-  background-color: #f0ede6;
+  background-color: var(--color-beige);
   padding: 150px 200px;
 }
 
 h1 {
-  font-family: "EB Garamond", serif;
+  font-family: var(--header-font);
   font-weight: bold;
   font-size: 72px;
 }
 
 h2 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--paragraph-font);
   text-transform: uppercase;
   letter-spacing: 8px;
   font-size: 42px;
 }
 
 h3 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--paragraph-font);
   font-size: 32px;
 }
