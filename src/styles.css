@@ -6,7 +6,6 @@ Beige: #fdf0d5
 Navy: #003049
 Light blue: #669bbc
 Dark red: #780000
-
 */
 
 .body {
@@ -29,23 +28,23 @@ Dark red: #780000
 
 .hero {
   background-color: #f0ede6;
-  padding: 200px;
+  padding: 150px 200px;
 }
 
 h1 {
   font-family: "EB Garamond", serif;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 72px;
 }
 
 h2 {
   font-family: "Nunito Sans", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 32px;
+  letter-spacing: 8px;
+  font-size: 42px;
 }
 
-p {
+h3 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 24px;
+  font-size: 32px;
 }
