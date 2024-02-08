@@ -1,0 +1,12 @@
+/*font-family: 'EB Garamond', serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+}
