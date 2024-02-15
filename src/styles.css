@@ -92,3 +92,14 @@ h3 {
   font-family: var(--paragraph-font);
   font-size: 18px;
 }
+
+footer {
+  background-color: var(--color-navy);
+  color: var(--color-beige);
+  font-family: var(--paragraph-font);
+  font-size: 12px;
+}
+
+footer a {
+  color: var(--color-beige);
+}
