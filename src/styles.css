@@ -17,6 +17,7 @@ Dark red: #780000
 
 .body {
   color: var(--color-navy);
+  font-size: 20px;
 }
 
 .navbar {
@@ -54,4 +55,29 @@ h2 {
 h3 {
   font-family: var(--paragraph-font);
   font-size: 32px;
+}
+
+.skills {
+  background-color: var(--color-navy);
+  font-size: 20px;
+}
+
+.skills h2 {
+  color: var(--color-beige);
+  text-align: center;
+}
+
+.skills .col {
+  color: var(--color-beige);
+  border: solid 1px var(--color-beige);
+  border-radius: 8px;
+  padding: 5px 30px;
+}
+
+.projects {
+  background-color: var(--color-beige);
+}
+
+.projects h2 {
+  text-align: center;
 }
