@@ -81,3 +81,14 @@ h3 {
 .projects h2 {
   text-align: center;
 }
+
+.projects h3 {
+  font-family: var(--header-font);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.projects p {
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+}
