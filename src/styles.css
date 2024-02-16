@@ -16,6 +16,20 @@ Dark red: #780000
   --paragraph-font: "Nunito Sans", sans-serif;
 }
 
+@media (max-width: 576px) {
+  .hero {
+    padding: 50px 80px !important;
+  }
+
+  h1 {
+    font-size: 48px !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+}
+
 .body {
   color: var(--dark-color);
   font-size: 20px;
@@ -116,6 +130,10 @@ h3 {
   background-color: var(--dark-color);
   color: var(--light-color);
   border: solid 3px var(--accent-color);
+}
+
+.shadow-light {
+  box-shadow: 7px 10px 45px -12px rgba(255, 255, 255, 0.48);
 }
 
 footer {
