@@ -9,20 +9,20 @@ Dark red: #780000
 */
 
 :root {
-  --color-navy: #003049;
-  --color-beige: #f0ede6;
+  --dark-color: #22014d;
+  --light-color: #f0ede6;
+  --accent-color: #e5d3a0;
   --header-font: "EB Garamond", serif;
   --paragraph-font: "Nunito Sans", sans-serif;
 }
 
 .body {
-  color: var(--color-navy);
+  color: var(--dark-color);
   font-size: 20px;
 }
 
 .navbar {
-  background-color: var(--color-beige) !important;
-  color: var(--color-navy) !important;
+  background-color: var(--dark-color) !important;
 }
 
 .navbar-brand {
@@ -35,14 +35,19 @@ Dark red: #780000
 }
 
 .hero {
-  background-color: var(--color-beige);
+  background-color: var(--light-color);
   padding: 9rem 12.5rem;
+  background-image: url(/img/Home.png);
+  color: var(--light-color);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
   font-family: var(--header-font);
   font-weight: bold;
   font-size: 72px;
+  color: var(--accent-color);
 }
 
 h2 {
@@ -58,24 +63,28 @@ h3 {
 }
 
 .skills {
-  background-color: var(--color-navy);
+  background-color: #6a4e8f;
   font-size: 20px;
 }
 
 .skills h2 {
-  color: var(--color-beige);
+  color: var(--light-color);
   text-align: center;
 }
 
 .skills .col {
-  color: var(--color-beige);
-  border: solid 2px var(--color-beige);
+  color: var(--light-color);
+  background-color: var(--dark-color);
   border-radius: 8px;
   padding: 5px 30px;
 }
 
 .projects {
-  background-color: var(--color-beige);
+  background-color: var(--dark-color);
+  background-image: url(/img/Projects.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light-color);
 }
 
 .projects h2 {
@@ -94,25 +103,28 @@ h3 {
 }
 
 .btn-primary {
-  background-color: var(--color-navy);
-  border: solid 2px var(--color-navy);
+  background-color: var(--accent-color);
+  border: solid 3px var(--accent-color);
   font-family: var(--paragraph-font);
   text-transform: uppercase;
+  color: var(--dark-color);
+  transition: ease-in-out all 0.2s;
+  font-size: 20px;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-beige);
-  color: var(--color-navy);
-  border: solid 3px var(--color-navy);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: solid 3px var(--accent-color);
 }
 
 footer {
-  background-color: var(--color-navy);
-  color: var(--color-beige);
+  background-color: var(--dark-color);
+  color: var(--light-color);
   font-family: var(--paragraph-font);
   font-size: 12px;
 }
 
 footer a {
-  color: var(--color-beige);
+  color: var(--light-color);
 }
