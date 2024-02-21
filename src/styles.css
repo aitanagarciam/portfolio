@@ -155,3 +155,49 @@ footer a {
   color: var(--light-color);
   font-size: 20px;
 }
+
+.about-section-2 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 20px;
+}
+
+.cta {
+  background-color: var(--dark-color);
+  font-size: 20px;
+}
+
+.accent-background {
+  background-color: var(--accent-color);
+}
+
+.cta-title {
+  font-family: var(--header-font);
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 40px;
+}
+
+.cta-subtitle {
+  font-family: var(--paragraph-font);
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 18px;
+}
+
+.cta-btn {
+  background-color: var(--dark-color);
+  border: solid 3px var(--dark-color);
+  font-family: var(--paragraph-font);
+  text-transform: uppercase;
+  color: var(--light-color);
+  transition: ease-in-out all 0.2s;
+  font-size: 20px;
+}
+
+.cta-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border: solid 3px var(--dark-color);
+}
+}
