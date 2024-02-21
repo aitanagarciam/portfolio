@@ -200,4 +200,16 @@ footer a {
   color: var(--dark-color);
   border: solid 3px var(--dark-color);
 }
+
+.fa-brands,
+.fa-regular {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  transition: ease-in-out all 0.2s;
+  text-decoration: none;
+}
+
+.fa-brands:hover,
+.fa-regular:hover {
+  background-color: var(--light-color);
 }
