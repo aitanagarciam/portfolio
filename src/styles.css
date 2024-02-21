@@ -213,3 +213,22 @@ footer a {
 .fa-regular:hover {
   background-color: var(--light-color);
 }
+
+.work {
+  background-image: url(/img/Work.png);
+  color: var(--light-color);
+}
+
+.pills {
+  border-color: var(--accent-color) !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.work-number {
+  font-family: var(--header-font);
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 48px;
+}
