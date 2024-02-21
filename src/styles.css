@@ -146,3 +146,12 @@ footer {
 footer a {
   color: var(--light-color);
 }
+
+.about-hero {
+  background-color: var(--dark-color);
+  background-image: url(/img/About.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light-color);
+  font-size: 20px;
+}
