@@ -165,6 +165,7 @@ footer a {
 .cta {
   background-color: var(--dark-color);
   font-size: 20px;
+  color: var(--dark-color);
 }
 
 .accent-background {
