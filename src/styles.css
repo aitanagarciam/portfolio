@@ -215,7 +215,7 @@ footer a {
 }
 
 .work {
-  background-image: url(/img/Work.png);
+  background-color: var(--dark-color);
   color: var(--light-color);
 }
 
@@ -231,4 +231,8 @@ footer a {
   color: var(--accent-color);
   font-weight: bold;
   font-size: 48px;
+}
+
+.work p {
+  font-size: 16px;
 }
