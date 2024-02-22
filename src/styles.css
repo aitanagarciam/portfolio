@@ -170,10 +170,15 @@ footer a {
   font-size: 20px;
 }
 
-.cta {
+.cta,
+.contact-cta {
   background-color: var(--dark-color);
   font-size: 20px;
   color: var(--dark-color);
+}
+
+.contact-cta {
+  height: 80vh;
 }
 
 .accent-background {
