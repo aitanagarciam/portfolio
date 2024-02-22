@@ -25,8 +25,16 @@ Dark red: #780000
     font-size: 48px !important;
   }
 
-  h3 {
+  h2 {
     font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 16px;
   }
 }
 
