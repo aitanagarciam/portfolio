@@ -22,6 +22,29 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    id: 5,
+    category: "Marketing/Web",
+    color: "bg-neon-orange/10 text-neon-orange border-neon-orange/20",
+    waczUrl: "wacz files/skulpt.wacz", // Placeholder for the WACZ file
+    targetUrl: "https://skulpt.com", // Placeholder URL
+    content: {
+      en: {
+        title: "Skulpt – Infrared Heated Pilates Studio",
+        tag: "Aesthetics & Efficiency",
+        challenge: "Create a sleek, modern digital presence for a premium, music-driven Pilates and Reformer studio in Indianapolis, bridging the gap between digital discovery, marketing, and in-studio bookings.",
+        logic: "Custom responsive web design on Squarespace, seamless Arketa booking widget integration, and Zapier backend automations connecting Meta ad campaigns directly with Arketa.",
+        result: "A frictionless scheduling and purchasing process, streamlined lead capture, and an optimized paid media marketing pipeline that efficiently tracks and nurtures new leads."
+      },
+      es: {
+        title: "Skulpt – Estudio de Pilates con Calor Infrarrojo",
+        tag: "Estética y Eficiencia",
+        challenge: "Crear una presencia digital moderna y elegante para un estudio premium de Pilates en Indianápolis, cerrando la brecha entre el descubrimiento digital, el marketing y las reservas en el estudio.",
+        logic: "Diseño web responsive personalizado en Squarespace, integración perfecta de widgets de reserva de Arketa y automatizaciones backend con Zapier conectando campañas de Meta Ads directamente con Arketa.",
+        result: "Un proceso de programación y compra sin fricciones, captura de leads optimizada y un pipeline de marketing de medios pagados que rastrea y nutre eficientemente a los nuevos clientes potenciales."
+      }
+    }
+  },
+  {
     id: 1,
     category: "Marketing/Web",
     color: "bg-neon-orange/10 text-neon-orange border-neon-orange/20",
