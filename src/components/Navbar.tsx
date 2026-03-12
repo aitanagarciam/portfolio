@@ -9,10 +9,9 @@ export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
 
   const navLinks = [
-    { name: t("nav.home"), href: "/#" },
     { name: t("nav.about"), href: "/#about" },
     { name: t("nav.projects"), href: "/#projects" },
-    { name: t("nav.contact"), href: "/#contact" },
+    { name: t("nav.contact"), href: "/contact" },
   ];
 
   const toggleLanguage = () => {
@@ -26,6 +25,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             to="/"
+            onClick={() => window.scrollTo(0, 0)}
             className="text-2xl font-serif font-semibold tracking-tight text-ink flex items-baseline"
           >
             Aitana García<span className="text-neon-orange text-3xl leading-none">.</span>
@@ -34,13 +34,23 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium text-ink/70 hover:text-neon-orange transition-colors"
-              >
-                {link.name}
-              </a>
+              link.href.startsWith('/#') ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-sm font-medium text-ink/70 hover:text-neon-orange transition-colors"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-sm font-medium text-ink/70 hover:text-neon-orange transition-colors"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
             
             {/* Language Toggle */}
@@ -81,14 +91,25 @@ export default function Navbar() {
         >
           <div className="px-6 pt-2 pb-6 space-y-4">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block text-base font-medium text-ink/80 hover:text-neon-orange"
-              >
-                {link.name}
-              </a>
+              link.href.startsWith('/#') ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-base font-medium text-ink/80 hover:text-neon-orange"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-base font-medium text-ink/80 hover:text-neon-orange"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
           </div>
         </motion.div>

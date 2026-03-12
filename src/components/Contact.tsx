@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { Mail, ArrowRight, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -28,28 +29,23 @@ export default function Contact() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
-            <a 
-              href="mailto:hola@aitanagarcia.com"
+            <Link 
+              to="/contact"
               className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-lime-green text-ink rounded-full font-semibold text-lg overflow-hidden transition-transform hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-3">
-                <Mail className="w-5 h-5" />
                 {t("contact.cta")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
               <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
-            </a>
+            </Link>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-8 pt-16 border-t border-bg-cream/10 mt-16">
-            <a href="#" className="text-bg-cream/50 hover:text-neon-orange transition-colors flex items-center gap-2">
+            <a href="https://www.linkedin.com/in/aitana-garcia/" target="_blank" rel="noopener noreferrer" className="text-bg-cream/50 hover:text-neon-orange transition-colors flex items-center gap-2">
               <Linkedin className="w-5 h-5" />
               <span className="text-sm font-medium uppercase tracking-wider">LinkedIn</span>
-            </a>
-            <a href="#" className="text-bg-cream/50 hover:text-lime-green transition-colors flex items-center gap-2">
-              <Twitter className="w-5 h-5" />
-              <span className="text-sm font-medium uppercase tracking-wider">Twitter</span>
             </a>
           </div>
         </motion.div>

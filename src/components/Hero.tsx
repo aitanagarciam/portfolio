@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Sparkles, Cpu } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
@@ -26,11 +26,9 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/10 bg-white/50 backdrop-blur-sm mb-8"
         >
-          <Sparkles className="w-4 h-4 text-neon-orange" />
           <span className="text-sm font-medium tracking-wide uppercase text-ink/80">
             {t("hero.badge")}
           </span>
-          <Cpu className="w-4 h-4 text-lime-green" />
         </motion.div>
 
         <motion.h1 
@@ -76,20 +74,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-xs uppercase tracking-widest text-ink/40 font-medium">{t("hero.scroll")}</span>
-        <motion.div 
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-[1px] h-12 bg-gradient-to-b from-ink/40 to-transparent"
-        />
-      </motion.div>
     </section>
   );
 }
