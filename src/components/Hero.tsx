@@ -18,6 +18,11 @@ export default function Hero() {
         transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
         className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-neon-orange/10 rounded-full blur-3xl"
       />
+      <motion.div 
+        animate={{ rotate: 180 }}
+        transition={{ duration: 60, repeat: Infinity, ease: "linear", repeatType: "reverse" }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#005aff]/10 rounded-full blur-[120px] pointer-events-none"
+      />
 
       <div className="max-w-5xl mx-auto relative z-10 text-center">
         <motion.div
